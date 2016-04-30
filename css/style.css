@@ -15,7 +15,7 @@ h1 {
 }
 
 form input{
-  background-color: #f0f0f0;
+  background: #f0f0f0;
 
   border:none;
   border-left: 2px solid #fff;
@@ -23,6 +23,16 @@ form input{
   font-size: 36px;
   padding:20px;
   width: 100%;
+
+  transition: background 2s border-left: 2s;
+}
+
+form input:focus{
+  background: #fff;
+  border-left: 2px solid #000;
+  box-shadow: none;
+  outline: none;
+
 }
 
 button.btn {
@@ -34,4 +44,9 @@ button.btn {
   font-size: 36px;
   padding: 20px 24px;
 
+}
+
+button.btn :hover{
+  background: #00f28f;
+  color: #fff;
 }
